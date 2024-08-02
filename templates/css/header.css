@@ -1,0 +1,86 @@
+.header {
+    box-shadow: 0 0 2px;
+    background: #fff;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 24px 0 8px;
+}
+
+.header .body .logo {
+    width: 60px;
+    height: 60px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    color: #555;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding: 8px 21px; /* 175% */
+    position: relative;
+    text-decoration: none;
+}
+
+.nav li a.active,
+.nav a:hover {
+    color: #171100;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li a.active::after {
+    content: "";
+    position: absolute;
+    left: 21px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    display: block;
+}
+
+.header .btn-sign-up {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.dropdown-menu {
+    padding: 8px;
+}
+
+.text-15 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.action .btn {
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 40px;
+    min-width: 118px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 24.5px;
+    background: #067521;
+}

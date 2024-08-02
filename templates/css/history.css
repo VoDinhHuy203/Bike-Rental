@@ -1,0 +1,36 @@
+section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin-right: 176px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #34495e;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+i {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    cursor: pointer;
+}

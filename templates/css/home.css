@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Khoi phuc lai co chu mac dinh theo rem */
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =========================common================================= */
+a {
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+.heading-lv2 {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 40px;
+    min-width: 118px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 24.5px;
+    background: #067521;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    color: black;
+}
+
+/* =========================header================================== */
+
+/* .login {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login-container {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+
+.login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+.login-title span {
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-inputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.login-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #067521;
+    font-size: 15px;
+    cursor: pointer;
+} */
+
+/* banner */
+
+.banner .banner-img {
+    position: relative;
+    width: 1170px;
+    margin: 48px 0;
+    border-radius: 20px;
+}
+
+.banner .desc {
+    position: absolute;
+    display: block;
+    top: 180px;
+    left: 570px;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Bike List */
+.product {
+    background: #f6f6f6;
+    padding-bottom: 64px;
+    margin-bottom: 80px;
+}
+
+.desc-tip {
+    font-size: 40px;
+    padding: 64px 0 40px;
+    text-align: center;
+}
+.bike-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bike-list .bike-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 0 12px;
+    gap: 30px;
+    margin-bottom: 12px;
+}
+
+.bike-item .bike-img {
+    object-fit: cover;
+    width: 259px;
+    height: 194px;
+    margin: 12px 0;
+    border-radius: 12px;
+}
+
+.bike-item .info {
+    padding: 6px 6px 12px;
+}
+
+.bike-item .name {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.bike-item .desc {
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.bike-item .price {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ======================Footer======================= */
+.footer {
+    background: #067521;
+    padding: 96px 135px 0;
+}
+
+.footer .logo {
+    width: 60px;
+    height: 60px;
+}
+
+.footer .row {
+    display: flex;
+    border-bottom: 1px solid #4b594f;
+    padding-bottom: 38px;
+}
+
+.footer .row .column {
+    width: 22%;
+}
+
+.footer .row .column:first-child {
+    width: 34%;
+}
+
+.footer .desc {
+    color: #bfbcb2;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+    min-width: 34%;
+}
+
+.footer .socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .title {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    border-bottom: 1px solid #4b594f;
+    padding-bottom: 14px;
+    padding-right: 48px;
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .list strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .copyright p {
+    padding: 28px 0;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
